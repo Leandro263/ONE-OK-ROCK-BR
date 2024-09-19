@@ -1,0 +1,100 @@
+.player-box{
+    text-align: center;
+  }
+
+  .controls {
+    display: flex; /* Usando Flexbox para organizar os botões */
+    justify-content: center; /* Centraliza horizontalmente os botões */
+    align-items: center; /* Alinha verticalmente os botões */
+    gap: 20px; /* Espaço entre os botões */
+    
+  }
+  
+  .controls button {
+    padding: 10px; /* Espaçamento interno dos botões */
+    cursor: pointer; /* Altera o cursor para mãozinha */
+    border: none; /* Remove borda padrão */
+    background: none; /* Remove background padrão */
+    display: flex; /* Para centralizar o ícone dentro do botão */
+    justify-content: center; /* Centraliza o ícone horizontalmente dentro do botão */
+    align-items: center; /* Centraliza o ícone verticalmente dentro do botão */
+    border: 2px solid #333;
+    border-radius: 50px;
+  }
+
+
+  
+  .controls i {
+    font-size:25px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    transition: all .2s;
+    color:rgb(0, 0, 0);
+  }
+
+  /* Cor geral ao passar o molse sob os controles
+
+  .controls i:hover {
+    color: rgb(5, 131, 131);
+  }
+
+  */
+
+  .controls button:nth-child(1) i:hover{
+    cursor: default;
+  }
+
+  /* Aumenta o ícone do botão do meio */
+.controls button:nth-child(2) i:hover{
+  color: rgb(5, 131, 131);
+  cursor: pointer;
+}
+
+.controls button:nth-child(3) i:hover{
+  cursor: default;
+}
+
+
+/* Aumenta o ícone do botão do meio */
+.controls button:nth-child(2) i {
+    font-size: 40px; /* Tamanho aumentado para o ícone do botão do meio */
+  }
+
+    /* Tamanho padrão para ícones dos outros botões */
+    .controls button i {
+        font-size: 25px; /* Tamanho padrão dos ícones */
+      }
+  
+  .controls i:hover {
+    background-color: rgba(217, 255, 0, 0);
+  }
+  
+  .time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .time span {
+    font-size: 22px;
+    color: #333;
+  }
+  
+  .footer {
+    width: 100%;
+  }
+  
+  .progress-bar {
+    height: 8px;
+    background-color: #cfcccc;
+    cursor: pointer;
+    margin-bottom: 5px;
+    border-radius: 0px;
+  }
+  
+  .progress {
+    height: 8px;
+    background-color: rgb(5, 131, 131);
+    border-radius: 0px;
+  }

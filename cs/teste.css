@@ -1,0 +1,303 @@
+body {
+    display: flex; /* Define o layout flexível para o body */
+    flex-direction: column; /* Organiza o conteúdo verticalmente */
+    align-items: center; /* Centraliza horizontalmente o conteúdo */
+    justify-content: flex-start; /* Alinha o conteúdo no topo */
+    min-height: 100vh; /* Altura mínima do body como 100% da altura da tela */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove padding padrão */
+    background-image: url('../img/bck.png'); /* Define a imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-attachment: fixed; /* Fixa a imagem de fundo */
+
+    -webkit-font-smoothing: antialiased; /* Para navegadores WebKit (Chrome, Safari) */
+    -moz-osx-font-smoothing: grayscale; /* Para navegadores em macOS */
+}
+
+.box-menu {
+    display: flex; /* Usa o layout Flexbox */
+    width: 100%; /* Largura máxima */
+    min-height: 13vh; /* Altura mínima igual à altura da viewport */
+    background-color: rgb(255, 255, 255); /* Cor de fundo */
+    align-items: center; /* Centraliza verticalmente o conteúdo dentro da div */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo dentro da div */
+    /* height: 100vh;  */ /* Use isso se quiser uma altura fixa em vez de min-height */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.800), 0 -4px 8px rgba(0, 0, 0, 0.800); /* Sombra inferior e superior */
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse as bordas da div */
+}
+.logo-img {
+    width: auto; /* Ajusta a largura máxima da imagem para não ultrapassar a largura da div */
+    height: 10vh; /* Ajusta a altura máxima da imagem para não ultrapassar a altura da div */
+    object-fit: contain; /* Ajusta a imagem para se ajustar ao contêiner sem distorcer */
+    margin-right: 0px; /* Espaço entre o logo e o menu */
+}
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+}
+.menu {
+    background-color: #00d9ff00;
+    color: #292929a9;
+    padding: 10px;
+    gap: 20px;
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    
+}
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.menu li {
+    margin: 0 15px;
+}
+.menu a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500; /* Normal */
+    line-height: 1.5; /* Ajuste conforme necessário */
+    transition: color 0.3s;
+}
+.menu a.bold {
+    font-weight: 800; /* Bold */
+}
+.menu a:hover {
+    color: rgb(255, 115, 0);
+    font-weight: bolder;
+}
+
+
+.caixa {
+    width: 100%; /* Usa 100% da largura da tela */
+    max-width: 1000px; /* Largura máxima de 500px */
+    min-height: 100px; /* Altura mínima de 100px para garantir que a div apareça */
+    background-color: rgba(255, 255, 255, 0.0); /* Cor de fundo verde */
+    color: white;
+    display: flex; /* Define a div como um contêiner flexível */
+    align-items: center; /* Centraliza verticalmente o conteúdo dentro da div */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo dentro da div */
+    border-radius: 0px; /* Bordas arredondadas */
+    align-items: flex-start; /* Alinha as divs filho no topo */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  Adiciona sombra */
+}
+
+.coluna {
+    flex: 1; /* Cada coluna ocupa o mesmo espaço */
+    display: flex; /* Define o layout flexível para as colunas */
+    flex-direction: column; /* Coloca as divs em colunas dentro da coluna */
+    gap: 7px; /* Espaçamento entre as divs dentro das colunas */
+    background-color: #ff002b00; /* Cor de fundo das colunas */
+    padding: 0px; /* Padding dentro das colunas */
+}
+
+.esq {
+    background-color: rgb(255, 255, 255); /* Fundo semitransparente para diferenciação */
+    padding: 2vh; /* Adiciona um padding interno */
+    margin-right: 1vh; /* Adiciona espaço à direita da div esquerda */
+    margin-top: 1vh; /* Adiciona espaço acima da div esquerda */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: auto;
+}
+
+.esq p {
+    text-align:right;
+}
+
+.dir-d h1, .dir-d h2, .dir-d h3{
+    display: none;
+}
+
+.dir {
+    height: 79.2vh; /* Define uma altura fixa de 300 pixels */
+    background-color: rgb(0, 0, 0); /* Fundo semitransparente para diferenciação */
+    padding: 2vh; /* Adiciona um padding interno */
+    margin-top: 1vh; /* Adiciona espaço acima da div esquerda */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+@keyframes piscar {
+    0%, 100% {
+        opacity: 1; /* Visível */
+    }
+    50% {
+        opacity: 0; /* Invisível */
+    }
+}
+.dir h1 {
+    text-align: center;
+    animation: piscar 1s infinite; /* Aplica a animação ao h1 */
+}
+.dir p {
+    font-size: 12px;
+    text-align: justify;
+}
+.dir p.re {
+    color: red;
+}
+
+.dir-d {
+    
+    background-color: rgb(255, 255, 255); /* Fundo semitransparente para diferenciação */
+    padding: 2vh; /* Adiciona um padding interno */
+    margin-top: 0vh; /* Adiciona espaço acima da div esquerda */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: auto;
+}
+
+.esq, .dir, .dir-d {
+    width: 35vw; /* Largura igual a 35% da largura da janela de visualização */
+}
+
+
+
+
+
+.esq p, .dir-d p {
+    color: #000000; /* Altera a cor do texto para um tom de laranja/vermelho */
+    font-size: 2vh;
+    line-height: 1.5;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    
+}
+.esq h1, .dir-d h1 {
+    color: #000000; /* Altera a cor do texto para um tom de laranja/vermelho */
+    font-size: 3vh;
+    margin-bottom: 0px; /* Reduz o espaço abaixo do h1 */
+    margin-left: 3vh;
+    margin-right: 3vh;
+    
+}
+.esq h2, .dir-d h2 {
+    color: #929191; /* Altera a cor do texto para um tom de laranja/vermelho */
+    font-size: 2vh;
+    margin-top: 0; /* Remove o espaço acima do h2 */
+    margin-bottom: 0px; /* Reduz o espaço abaixo do h1 */
+    margin-left: 3vh;
+    margin-right: 3vh;
+    
+}
+
+.esq h3, .dir-d h3{
+    color: #000000; 
+    margin-top: 0; /* Remove o espaço acima do h2 */
+    font-style: italic;
+    font-size: 2vh;
+    margin-left: 3vh;
+    margin-right: 3vh;
+}
+
+.image-container {
+    position: relative; /* Necessário para o posicionamento absoluto da legenda */
+    width: auto; /* Largura da área de exibição da imagem */
+    height: 50vh; /* Altura da área de exibição da imagem */
+    background-image: url('../img/ambitions-jp.png'); /* Defina o caminho da sua imagem */
+    background-size: cover; /* Faz com que a imagem cubra todo o contêiner */
+    background-position: center; /* Centraliza a imagem dentro do contêiner */
+    border-radius: 0px; /* Adiciona bordas arredondadas */
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse as bordas */
+}
+.caption {
+    position: absolute; /* Posiciona a legenda sobre a imagem */
+    bottom: 0; /* Posiciona a legenda na parte inferior do contêiner */
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.781); /* Fundo escuro com transparência */
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    opacity: 0; /* Oculta a legenda inicialmente */
+    transition: opacity 0.8s ease; /* Transição suave para a visibilidade */
+    border-bottom-left-radius: 0px; /* Bordas arredondadas na parte inferior */
+    border-bottom-right-radius: 0px;
+}
+
+.image-container:hover .caption {
+    opacity: 1; /* Torna a legenda visível ao passar o mouse */
+}
+
+
+.music-player{
+    width: 100%;
+    height: auto;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 73vw;
+    margin-top: 7px;
+    background-color: #000000; /* Cor de fundo do rodapé */
+    color: #ffffff; /* Cor do texto */
+    padding: 9px; /* Padding ao redor do texto */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para o rodapé */
+}
+
+
+
+
+
+
+
+
+.instagram-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #C13584;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 20px
+}
+
+.instagram-link i {
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+.instagram-link:hover {
+    color: #E1306C;
+}
+
+    
+@media (max-width: 480px) {
+    .caixa {
+        padding: 15px; /* Ajusta o padding para telas menores */
+        font-size: 14px; /* Diminui o tamanho da fonte */
+    }
+}
+
+#desabilitado {
+    color: rgba(0, 0, 0, 0.200);
+    cursor: default;
+}
+
+.pix {
+    margin-top: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    
+}
+.pix-img {
+    width: 100%; /* A imagem vai ocupar toda a largura da div */
+    height: auto; /* Ajusta a altura máxima da imagem para não ultrapassar a altura da div */
+    object-fit: cover; /* Ajusta a imagem para se ajustar ao contêiner sem distorcer */
+    align-items: center;
+    display: block;
+    
+}
+
+.esq a {
+    color:#868485;
+    cursor: default;
+    text-decoration: none;
+}
