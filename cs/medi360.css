@@ -1,0 +1,390 @@
+@media (max-width: 568px) {
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+      background-image: url('../img/bck.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  
+    .box-menu {
+      display: flex;
+      width: 100%;
+      height: 13vh;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.800), 0 -4px 8px rgba(0, 0, 0, 0.800);
+      overflow: hidden;
+    }
+  
+    .logo-img {
+      margin-left: 10px; /* Ajuste conforme necessário */
+      width: auto;
+      height: 10vh;
+      object-fit: contain;
+    }
+  
+    .menu-container {
+      display: block;
+      margin-left: auto; /* Ajuste para centralizar se necessário */
+    }
+  
+    .menu {
+      background-color: #08829700;
+      color: #292929a9;
+      padding: 10px;
+      gap: 20px;
+      text-transform: uppercase;
+    }
+  
+    .menu ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .menu li {
+      margin: 0 15px;
+    }
+  
+    .menu a {
+      color: #000000;
+      text-decoration: none;
+      font-weight: 500;
+      line-height: 1.5;
+      transition: color 0.3s;
+    }
+  
+    .menu a.bold {
+      font-weight: 800;
+    }
+  
+    .menu a:hover {
+      color: rgb(0, 255, 21);
+      font-weight: bolder;
+    }
+  
+    .caixa {
+      width: 100%;
+      max-width: 1000px;
+      min-height: 100px;
+      background-color: rgba(255, 255, 255, 0.0);
+      color: white;
+      display: flex;
+      flex-direction: column; /* Ajusta a coluna para layout vertical */
+      align-items: center;
+      justify-content: center;
+      border-radius: 0px;
+    }
+  
+    .coluna {
+      width: 100%; /* Ajusta a largura das colunas para ocupar toda a largura disponível */
+      display: flex;
+      flex-direction: column;
+      gap: 0px;
+      background-color: #ff002b00;
+      padding: 0px;
+    }
+  
+    .esq {
+      width: 100%; /* Faz com que a coluna ocupe 100% da largura disponível */
+      background-color: rgb(255, 255, 255);
+      padding: 2vh;
+      margin: 1vh 0; /* Ajusta a margem vertical */
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      height: auto;
+      margin-bottom: 0;
+      
+    }
+  
+    .esq p {
+      text-align: center;
+    }
+  
+    .dir, .dir-d {
+      display: none; /* Oculta as outras divs */
+    }
+  
+    .esq p, .dir-d p {
+      color: #000000;
+      font-size: 2vh;
+      line-height: 1.5;
+      margin: 3vh;
+    }
+  
+    .esq h1, .dir-d h1 {
+      color: #000000;
+      font-size: 3vh;
+      margin: 0 3vh;
+      margin-top: 8vh;
+    }
+  
+    .esq h2, .dir-d h2 {
+      color: #929191;
+      font-size: 2vh;
+      margin: 0 3vh;
+    }
+  
+    .esq h3, .dir-d h3 {
+      color: #000000;
+      font-style: italic;
+      font-size: 2vh;
+      margin: 0 3vh;
+    }
+
+
+
+
+
+  
+
+  
+  
+    .instagram-link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #C13584;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      margin: 20px;
+    }
+  
+    .instagram-link i {
+      font-size: 24px;
+      margin-right: 8px;
+    }
+  
+    .instagram-link:hover {
+      color: #E1306C;
+    }
+  
+    #desabilitado {
+      color: rgba(0, 0, 0, 0.200);
+      cursor: default;
+    }
+  
+    .pix {
+      margin-top: 50%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .pix-img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      align-items: center;
+      display: block;
+    }
+  
+    .esq a {
+      color:#868485;
+      cursor: default;
+      text-decoration: none;
+    }
+  
+
+  .rodape {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente os itens no rodapé */
+    align-items: center; /* Centraliza verticalmente os itens no rodapé */
+    width: 100%; /* Define a largura do rodapé como 100% da tela */
+    background-color: #000000; /* Cor de fundo do rodapé */
+    color: #ffffff; /* Cor do texto */
+    padding: 9px; /* Padding ao redor do texto */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para o rodapé */
+    bottom: 0; /* Posiciona o rodapé na parte inferior da tela */
+    left: 0; /* Garante que o rodapé comece do lado esquerdo da tela */
+    margin-top: 0; /* Remove margens adicionais que possam estar causando o espaçamento */
+}
+
+  .rodape .content {
+    text-align: center; /* Alinha o texto ao centro dentro do rodapé */
+    width: 100%; /* Garante que o conteúdo ocupe 100% da largura do rodapé */
+  }
+
+
+
+
+  /* PLAYER */
+                .image-container {
+                    width: 60%; /* Largura da imagem */
+                    background-image: url('../img/ambitions-jp.png');
+                    background-size: cover;
+                    background-position: center;
+                    border-radius: 0px;
+                    overflow: hidden;
+                    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+                    display: flex; /* Adiciona Flexbox */
+                    justify-content: center; /* Centraliza o conteúdo dentro da imagem se houver */
+                }
+
+                /* barra off */
+                .progress-bar {
+                    width: 60%; /* Ajusta a largura da barra de carregamento */
+                    height: 1vh;
+                    background-color: #cfcccc;
+                    cursor: pointer;
+                    margin-bottom: 15vh;
+                    margin: 0 auto; /* Centraliza a barra de carregamento horizontalmente */
+                    border-radius: 0px;
+                }
+                /* barra on */
+                .progress {
+                    width: 0%;
+                    height: 1vh;
+                    background-color: rgb(255, 0, 0);
+                    border-radius: 0px;
+                }
+
+                .caption {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: auto;
+                    padding: 10px;
+                    background-color: rgba(255, 255, 255, 0.349);
+                    color: rgba(0, 0, 0, 0.514);
+                    font-family: 'Times New Roman', Times, serif;
+                    text-align: center;
+                    font-size: 0.6rem; /* Tamanho da fonte ajustado */
+                    
+                    opacity: 0;
+                    transition: opacity 0.8s ease;
+                    border-bottom-left-radius: 0px;
+                    border-bottom-right-radius: 0px;
+                  }
+                  .caption h1 {
+                    margin-top: 2vh;
+                    font-size: 1.0rem; /* Tamanho da fonte ajustado */
+                  }
+                  .image-container:hover .caption {
+                    opacity: 1;
+                  }
+
+
+                  .linha-divisao {
+                    width: 100%; /* Faz a linha ocupar 100% da largura */
+                    height: 1px; /* Define a espessura da linha */
+                    background-color: #8f8e8e57; /* Cor da linha */
+                    margin: 20px 0; /* Espaçamento acima e abaixo da linha */
+                }
+                
+                  .music-player {
+                    width: 100%;
+                    height: auto;
+                  }
+
+
+                    .player-box{
+        
+                        width: 100%; /* Certifica que a player-box ocupe 100% da largura do contêiner pai */
+                        max-width: 500px; /* Define uma largura máxima para a player-box */
+                        margin: 0 auto; /* Centraliza a div na página */
+                        text-align: center;
+                        overflow: hidden; /* Impede que o conteúdo ultrapasse os limites */
+                        position: relative; /* Garante que os elementos dentro fiquem contidos */
+                    }
+                    
+
+                    
+                        .controls {
+                        display: flex; /* Usando Flexbox para organizar os botões */
+                        justify-content: center; /* Centraliza horizontalmente os botões */
+                        align-items: center; /* Alinha verticalmente os botões */
+                        gap: 20px; /* Espaço entre os botões */ 
+                        flex-wrap: wrap; /* Isso garante que os controles não saiam da div */
+                        margin-top: 3vh; /* Espaçamento responsivo */ 
+                        }
+                        
+                        .controls button {
+                        padding: 10px; /* Espaçamento interno dos botões */
+                        cursor: pointer; /* Altera o cursor para mãozinha */
+                        border: none; /* Remove borda padrão */
+                        background: none; /* Remove background padrão */
+                        display: flex; /* Para centralizar o ícone dentro do botão */
+                        justify-content: center; /* Centraliza o ícone horizontalmente dentro do botão */
+                        align-items: center; /* Centraliza o ícone verticalmente dentro do botão */
+                        border: 2px solid #333;
+                        border-radius: 50px;
+                        }
+                    
+                    
+                        
+                        .controls i {
+                        font-size:25px;
+                        padding: 5px;
+                        border-radius: 50%;
+                        background-color: #ffffff;
+                        transition: all .2s;
+                        color:rgb(0, 0, 0);
+                        }
+                    
+                        /* Cor geral ao passar o molse sob os controles
+                    
+                        .controls i:hover {
+                        color: rgb(5, 131, 131);
+                        }
+                    
+                        */
+                    
+                        .controls button:nth-child(1) i:hover{
+                        cursor: default;
+                        }
+                    
+                        /* Aumenta o ícone do botão do meio */
+                    .controls button:nth-child(2) i:hover{
+                        color: rgb(5, 131, 131);
+                        cursor: pointer;
+                    }
+                    
+                    .controls button:nth-child(3) i:hover{
+                        cursor: default;
+                    }
+                    
+                    
+                    /* Aumenta o ícone do botão do meio */
+                    .controls button:nth-child(2) i {
+                        font-size: 40px; /* Tamanho aumentado para o ícone do botão do meio */
+                        }
+                    
+                        /* Tamanho padrão para ícones dos outros botões */
+                        .controls button i {
+                            font-size: 25px; /* Tamanho padrão dos ícones */
+                            }
+                        
+                        .controls i:hover {
+                        background-color: rgba(217, 255, 0, 0);
+                        }
+                        
+                        .time {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        }
+                        
+                        .time span {
+                        font-size: 19px;
+                        color: #333;
+                        }
+                        
+                        .footer {
+                        width: 100%;
+                        }
+                        
+
+
+                    
